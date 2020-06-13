@@ -5,11 +5,6 @@
         }
         
         .logo {
-            /* text-decoration: none;
-            font-weight: 900;
-            font-size: 20px;
-            color: #ee9246;
-            letter-spacing: 2px; */
             height: 0px;
         }
         
@@ -62,7 +57,7 @@
         }
         
         .menu a {
-            color: #333;
+            color: #777;
             text-decoration: none;
         }
         
@@ -124,6 +119,7 @@
             padding: 30px;
             line-height: 26px;
             color: #333;
+            /* background-color: rgb(245, 245, 245); */
         }
         
         .about-photo img {

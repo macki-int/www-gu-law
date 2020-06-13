@@ -105,6 +105,15 @@
             display: none;
         }
         
+        #services li {
+            /*list-style: none;*/
+            /*float: left;*/
+            margin-left: 50px;
+            text-align: left;
+            /*font-size: 14px;
+            */
+        }
+        
         .about-photo {
             width: 32%;
             overflow: hidden;
@@ -121,27 +130,17 @@
             width: 100%;
         }
         
-        .social-icons {
-            font-size: 20px;
-            color: #777;
-            text-decoration: none;
-        }
-        
-        .social-icons:hover {
-            color: #000;
-        }
-        
         .btn {
-            background-color: #111;
-            color: white;
+            background-color: white;
+            color: #777;
             padding: 10px 20px;
-            border: 2px solid #111;
+            border: 2px solid#999;
         }
         
         .btn:hover {
-            background-color: #fff;
-            color: #111;
-            border: 2px solid #111;
+            background-color: #777;
+            color: white;
+            border: 2px solid #777;
         }
         
         div {

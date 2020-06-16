@@ -140,6 +140,19 @@
     </section>
 
     <script src="https://kit.fontawesome.com/18249e22ff.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+    <script>
+        window.sr = ScrollReveal();
+        sr.reveal('.icon', {
+            reset: true,
+            delay: 300,
+            distance: 0
+        });
+        sr.reveal('h1, h2, h3, p, li', {
+            reset: true,
+            delay: 300
+        });
+    </script>
 </body>
 
 </html>

@@ -17,14 +17,27 @@
             </a>
         </div>
         <nav>
-            <ul class="menu">
+            <!-- <ul class="menu">
                 <li><a href="#">HOME</a></li>
                 <li><a href="#services">OFERTA</a></li>
                 <li><a href="#about-me">O MNIE</a></li>
                 <li><a href="#contact">KONTAKT</a></li>
+            </ul> -->
+            <input type="checkbox" id="chk">
+            <label for="chk" class="show-menu-btn">
+                <i class="fas fa-ellipsis-h"></i>
+            </label>
+            <ul class="nav-links">
+                <a href="#intro" onclick="uncheck()">WSTĘP</a>
+                <a href="#basics" onclick="uncheck()">PODSTAWY</a>
+                <a href="#skis" onclick="uncheck()">DOBÓR SPRZĘTU</a>
+                <a href="#service" onclick="uncheck()">SERWIS</a>
+                <a href="#calc" onclick="uncheck()">KALKULATOR</a>
+                <label for="chk" class="hide-menu-btn">
+                    <i class="fas fa-times"></i>
+                </label>
             </ul>
         </nav>
-        <a class="mobile-menu-btn" href="#">MENU</a>
     </header>
 
     <section id="main-page">
@@ -177,6 +190,13 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
+    </script>
+
+    <script>
+        function uncheck() {
+            const inputs = document.querySelector('#chk');
+            inputs.checked = false;
+        }
     </script>
 
 </body>

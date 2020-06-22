@@ -255,3 +255,110 @@ div {
         text-shadow: 0px 5px 25px rgba(0, 0, 0, 0.322);
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+/*navbar*/
+nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    height: 100px;
+    padding: 0;
+}
+
+.nav-links {
+    line-height: 100px;
+}
+
+.nav-links a {
+    padding: 0 20px;
+    color: #000000;
+    text-decoration: none;
+    font-size: 0.8em;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.show-menu-btn,
+.hide-menu-btn {
+    -webkit-transition: .4s;
+    transition: .4s;
+    font-size: 1.5em;
+    cursor: pointer;
+    display: none;
+}
+
+.show-menu-btn {
+    float: right;
+}
+
+.show-menu-btn i {
+    line-height: 100px;
+    color: #d46565;
+}
+
+.hide-menu-btn i {
+    color: #b94848;
+}
+
+.nav-links a:hover,
+.show-menu-btn:hover,
+.hide-menu-btn:hover {
+    color: #821186;
+}
+
+#chk {
+    position: absolute;
+    visibility: hidden;
+    z-index: 10;
+}
+
+@media screen and (max-width: 950px) {
+
+    .show-menu-btn,
+    .hide-menu-btn {
+        display: block;
+    }
+
+    .nav-links {
+        position: fixed;
+        width: 100%;
+        background: #80a1c4;
+        right: -100%;
+        top: 0;
+        text-align: center;
+        padding: 80px 0;
+        line-height: normal;
+        -webkit-transition: .7s;
+        transition: .7s;
+    }
+
+    .nav-links a {
+        display: block;
+        padding: 20px;
+    }
+
+    .hide-menu-btn {
+        position: absolute;
+        top: 40px;
+        right: 40px;
+    }
+
+    #chk:checked~.nav-links {
+        right: 0;
+    }
+}

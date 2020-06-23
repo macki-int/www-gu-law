@@ -1,203 +1,276 @@
 <!DOCTYPE html>
 <html lang="pl-PL">
-
-<head>
-    <meta charset="utf-8">
+  <head>
+    <meta charset="utf-8" />
     <title>LEX-M</title>
-    <link rel="icon" href="favicon.ico">
-    <link rel="stylesheet" href="./css/style.css">
-</head>
+    <link rel="icon" href="favicon.ico" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
 
-
-<body>
+  <body>
     <header>
-        <div class="logo">
-            <a href="#">
-                <img src="./imgs/logo_lex-m_mono_med.svg" alt="Logo">
-            </a>
-        </div>
-        <nav>
-            <!-- <ul class="menu">
-                <li><a href="#">HOME</a></li>
-                <li><a href="#services">OFERTA</a></li>
-                <li><a href="#about-me">O MNIE</a></li>
-                <li><a href="#contact">KONTAKT</a></li>
-            </ul> -->
-            <input type="checkbox" id="chk">
-            <label for="chk" class="show-menu-btn">
-                <i class="fas fa-ellipsis-h"></i>
-            </label>
-            <ul class="nav-links">
-                <a href="#" onclick="uncheck()">HOME</a>
-                <a href="#services" onclick="uncheck()">OFERTA</a>
-                <a href="#about-me" onclick="uncheck()">O MNIE</a>
-                <a href="#contact" onclick="uncheck()">KONTAKT</a>
-                <label for="chk" class="hide-menu-btn">
-                    <i class="fas fa-times"></i>
-                </label>
-            </ul>
-        </nav>
+      <div>
+        <a href="#">
+          <img
+            src="./imgs/logo_lex-m_mono_med.svg"
+            alt="Logo"
+          />
+        </a>
+      </div>
+      <nav>
+        <input type="checkbox" id="check" />
+        <label for="check" class="button--show-menu">
+          <i class="fas fa-bars"></i>
+        </label>
+        <ul class="menu">
+          <a href="#" onclick="uncheck()">HOME</a>
+          <a href="#services" onclick="uncheck()">OFERTA</a>
+          <a href="#about-me" onclick="uncheck()">O MNIE</a>
+          <a href="#contact" onclick="uncheck()">KONTAKT</a>
+          <label for="check" class="button--hide-menu">
+            <i class="fas fa-times"></i>
+          </label>
+        </ul>
+      </nav>
     </header>
-
-    <section id="main-page">
-        <div class="main-page-content">
-            <h1>OFERUJĘ:</h1>
-            <h2>WSPARCIE PRAWNE DLA FIRM
-                <br>KANCELARII PRAWNYCH I KOMORNICZYCH
-                <br>ORAZ OSÓB PRYWATNYCH</h2>
+    <main>
+      <section id="mainpage">
+        <div class="mainpage__content">
+          <h1>
+            WSPARCIE PRAWNE DLA FIRM <br />
+            KANCELARII PRAWNYCH I KOMORNICZYCH <br />
+            OSÓB PRYWATNYCH
+          </h1>
         </div>
-    </section>
+      </section>
 
-    <section id="services">
-        <div data-aos="fade-zoom-in" data-aos-once="true" data-aos-delay="300" data-aos-duration="400">
-            <div class="row text-center">
-                <h1>ŚWIADCZĘ POMOC PRZEDE WSZYSTKIM W NASTĘPUJĄCYM ZAKRESIE</h1>
-            </div>
-            <div data-aos="fade-zoom-in" data-aos-once="true" data-aos-delay="300" data-aos-duration="1000">
-
-                <div class="col-1-3 text-center">
-
-                    <em class="fas fa-layer-group"></em>
-                    <h1>Kancelarie prawne i komornicze</h1>
-                    <ul>
-                        <li>sporządzanie analiz i sprawozdań dla potrzeb danego postępowania</li>
-                        <li>wyszukiwanie orzeczeń i linii orzeczniczych</li>
-                        <li>analiza linii orzeczniczej</li>
-                        <li>spoeządzanie pism procesowych</li>
-                        <li>zastępstwo spotkaniach z klientami</li>
-                        <li>wsparcie merytoryczne z zakresu PZP, prawa budowlanego, wodnego i
-                            geologiczno-hdrotechnicznego
-                        </li>
-                        <li>analiza dokumentów</li>
-                        <li>fotokopia akt</li>
-                        <li>transkrypcja nagrań</li>
-                    </ul>
-                </div>
-                <div class="col-1-3 text-center">
-                    <em class="fas fa-layer-group"></em>
-                    <h1>Przedsiębiorstwa</h1>
-                    <ul>
-                        <li>przygotowanie ofert przetargowych zgodnie z wymaganiami specyfikacji istotnych warunków
-                            zamówienia (SIWZ)</li>
-                        <li>pomoc w zakresie procedury administracyjnej prowadzonych realizacji (pozwolenia na budowę
-                            zgłoszenia prowadzonych prac książka budowy, pozwolenie wodnoprawne</li>
-                        <li>tworzenie OWS i OWZ</li>
-                        <li>opracowanie umów i regulaminów</li>
-                        <li>analiza dokumentów</li>
-                        <li>wsparcie podczas uzyskania dofinansowania ze środków UE</li>
-                        <li>sporządzanie specyfikacji i zapytań ofertowych w ramach projektów współfinansowanych ze
-                            środków
-                            UE </li>
-                        <li>przeprowadzenie procedury w ramach bazy konkurencyjności (wymogi ze strony …… )</li>
-                        <li>kierowanie projektami UE</li>
-                    </ul>
-                </div>
-                <div class="col-1-3 text-center">
-                    <em class="fas fa-layer-group"></em>
-                    <h1>Osoby prywatne</h1>
-                    <ul>
-                        <li>pomoc w procedurze administracyjnej</li>
-                        <li>pośredniczenbie w załatwianiu spraw urzędowych na wszystkich etapach postępowań
-                            administracyjnych</li>
-                        <li>analiza dokumentów</li>
-                        <li>transkrypcja nagrań</li>
-                        <li>sporządzanie pism urzędowych</li>
-                    </ul>
-                </div>
-            </div>
+      <section id="services">
+        <h2>
+          ŚWIADCZĘ POMOC W NASTĘPUJĄCYM ZAKRESIE
+        </h2>
+        <div class="services__content">
+          <div>
+            <em class="fas fa-layer-group"></em>
+            <h3>Kancelarie prawne i komornicze</h3>
+            <ul>
+              <li>
+                sporządzanie analiz i sprawozdań dla potrzeb
+                danego postępowania
+              </li>
+              <li>
+                wyszukiwanie orzeczeń i linii orzeczniczych
+              </li>
+              <li>analiza linii orzeczniczej</li>
+              <li>spoeządzanie pism procesowych</li>
+              <li>zastępstwo spotkaniach z klientami</li>
+              <li>
+                wsparcie merytoryczne z zakresu PZP, prawa
+                budowlanego, wodnego i
+                geologiczno-hdrotechnicznego
+              </li>
+              <li>analiza dokumentów</li>
+              <li>fotokopia akt</li>
+              <li>transkrypcja nagrań</li>
+            </ul>
+          </div>
+          <div>
+            <em class="fas fa-layer-group"></em>
+            <h3>Przedsiębiorstwa</h3>
+            <ul>
+              <li>
+                przygotowanie ofert przetargowych zgodnie z
+                wymaganiami specyfikacji istotnych warunków
+                zamówienia (SIWZ)
+              </li>
+              <li>
+                pomoc w zakresie procedury administracyjnej
+                prowadzonych realizacji (pozwolenia na
+                budowę zgłoszenia prowadzonych prac książka
+                budowy, pozwolenie wodnoprawne
+              </li>
+              <li>tworzenie OWS i OWZ</li>
+              <li>opracowanie umów i regulaminów</li>
+              <li>analiza dokumentów</li>
+              <li>
+                wsparcie podczas uzyskania dofinansowania ze
+                środków UE
+              </li>
+              <li>
+                sporządzanie specyfikacji i zapytań
+                ofertowych w ramach projektów
+                współfinansowanych ze środków UE
+              </li>
+              <li>
+                przeprowadzenie procedury w ramach bazy
+                konkurencyjności (wymogi ze strony …… )
+              </li>
+              <li>kierowanie projektami UE</li>
+            </ul>
+          </div>
+          <div>
+            <em class="fas fa-layer-group"></em>
+            <h3>Osoby prywatne</h3>
+            <ul>
+              <li>pomoc w procedurze administracyjnej</li>
+              <li>
+                pośredniczenbie w załatwianiu spraw
+                urzędowych na wszystkich etapach postępowań
+                administracyjnych
+              </li>
+              <li>analiza dokumentów</li>
+              <li>transkrypcja nagrań</li>
+              <li>sporządzanie pism urzędowych</li>
+            </ul>
+          </div>
         </div>
-        </div>
-    </section>
+      </section>
 
-    <section id="info">
-        <div data-aos="fade-zoom-in" data-aos-once="true" data-aos-delay="300" data-aos-duration="1000"
-            data-aos-offset="400">
-            <div class="info-content">
-                <h1>TYTUŁ (?)</h1>
-                <h3>Oferujemy usługi spersonalizowane – dostosowane do oczekiwań i potrzeb każdego Klienta, oferując
-                    dogodne
-                    formy współpracy, różnorodne rozwiązania i wiele nowych możliwości</h3>
-                <p>Jednak nie zapewniam wyłącznie pomocy teoretycznej – w razie potrzeby, gwarantując profesjonalne i
-                    rzetelne podejście do każdej sprawy. Gwarantujemy 100% poufności i najwyższą jakość Każdą sprawą
-                    rozpatrujemy indywidualnie w oparciu o przedłożoną
-                    dokumentację oraz po zapoznaniu się ze stanem faktycznym i prawnym. Indywidualna oferta jest
-                    przygotowana zgodnie z potrzebami i oczekiwaniami klienta.</p>
-            </div>
-            <div class="info-photo float-right">
-                <img src="./imgs/law_library_small.jpg" alt="Info">
-            </div>
+      <section id="info">
+        <div
+          data-aos="fade-zoom-in"
+          data-aos-once="true"
+          data-aos-delay="300"
+          data-aos-duration="1000"
+          data-aos-offset="400"
+        >
+          <div class="info-content">
+            <h1>TYTUŁ (?)</h1>
+            <h3>
+              Oferujemy usługi spersonalizowane –
+              dostosowane do oczekiwań i potrzeb każdego
+              Klienta, oferując dogodne formy współpracy,
+              różnorodne rozwiązania i wiele nowych
+              możliwości
+            </h3>
+            <p>
+              Jednak nie zapewniam wyłącznie pomocy
+              teoretycznej – w razie potrzeby, gwarantując
+              profesjonalne i rzetelne podejście do każdej
+              sprawy. Gwarantujemy 100% poufności i
+              najwyższą jakość Każdą sprawą rozpatrujemy
+              indywidualnie w oparciu o przedłożoną
+              dokumentację oraz po zapoznaniu się ze stanem
+              faktycznym i prawnym. Indywidualna oferta jest
+              przygotowana zgodnie z potrzebami i
+              oczekiwaniami klienta.
+            </p>
+          </div>
+          <div class="info-photo float-right">
+            <img
+              src="./imgs/law_library_small.jpg"
+              alt="Info"
+            />
+          </div>
         </div>
-    </section>
+      </section>
 
-    <section id="about-me">
-        <div data-aos="fade-zoom-in" data-aos-once="true" data-aos-delay="300" data-aos-duration="1000"
-            data-aos-offset="200">
-            <div class="about-photo">
-                <img src="./imgs/about_me.jpg" alt="O mnie">
-            </div>
-            <div class="about-content">
-                <h1>O mnie</h1>
-                <h3>Prawo nie jest po prostu sztywnym zbiorem przepisów...</h3>
-                <p>A zadaniem prawnika nie jest wyłącznie wyrecytowanie odpowiedniego paragrafu na zawołanie. Kluczową
-                    rolę
-                    w tym wszystkim odgrywa właściwa interpretacja każdego zapisku, z dogłębnym zrozumieniem w jaki
-                    sposób
-                    może przyczynić się do realnego
-                    przedstawienia zaistniałej sytuacji. Właśnie to jest tak fascynujące w tym zawodzie i stąd wywodzi
-                    się
-                    moja zawodowa oraz prywatna pasja do kodeksów, ustaw czy rozporządzeń. Studia inżynierskie oraz
-                    prawnicze pozwoliły mi na w przekrojowe/szerokie/niestandardowe/
-                    spojrzenie na stawiane pytanie. Dodatkowo połączenie wykształcenia inżynierskiego i uniwersyteckiego
-                    pozwala mi w swobodny sposób poruszać się po najtrudniejszych gałęziach prawa jakim są prawo
-                    budowlane,
-                    wodne, PZP, geologiczne i górnicze.</p>
-            </div>
+      <section id="about-me">
+        <div
+          data-aos="fade-zoom-in"
+          data-aos-once="true"
+          data-aos-delay="300"
+          data-aos-duration="1000"
+          data-aos-offset="200"
+        >
+          <div class="about-photo">
+            <img src="./imgs/about_me.jpg" alt="O mnie" />
+          </div>
+          <div class="about-content">
+            <h1>O mnie</h1>
+            <h3>
+              Prawo nie jest po prostu sztywnym zbiorem
+              przepisów...
+            </h3>
+            <p>
+              A zadaniem prawnika nie jest wyłącznie
+              wyrecytowanie odpowiedniego paragrafu na
+              zawołanie. Kluczową rolę w tym wszystkim
+              odgrywa właściwa interpretacja każdego
+              zapisku, z dogłębnym zrozumieniem w jaki
+              sposób może przyczynić się do realnego
+              przedstawienia zaistniałej sytuacji. Właśnie
+              to jest tak fascynujące w tym zawodzie i stąd
+              wywodzi się moja zawodowa oraz prywatna pasja
+              do kodeksów, ustaw czy rozporządzeń. Studia
+              inżynierskie oraz prawnicze pozwoliły mi na w
+              przekrojowe/szerokie/niestandardowe/
+              spojrzenie na stawiane pytanie. Dodatkowo
+              połączenie wykształcenia inżynierskiego i
+              uniwersyteckiego pozwala mi w swobodny sposób
+              poruszać się po najtrudniejszych gałęziach
+              prawa jakim są prawo budowlane, wodne, PZP,
+              geologiczne i górnicze.
+            </p>
+          </div>
         </div>
-    </section>
+      </section>
 
-    <section id="contact">
-        <div data-aos="fade-zoom-in" data-aos-once="true" data-aos-delay="300" data-aos-duration="1000"
-            data-aos-offset="400">
-            <div class="contact-content">
-                <div class="row">
-                    <div class="col-1-2">
-                        <script type="text/javascript"
-                            src="https://pub37.bravenet.com/emailfwd/bnet.forms.js.php?formid=3860&usernum=3154160027&formpadding=0">
-                        </script>
-                    </div>
-                    <div id="contact-phone" class=" col-1-2 text-center">
-                        <h1>Dane kontaktowe:</h1>
-                        <h2>690 460 993 </h2>
-                        <h2>biuro@lex-m.pl</h2>
-                    </div>
-                </div>
+      <section id="contact">
+        <div
+          data-aos="fade-zoom-in"
+          data-aos-once="true"
+          data-aos-delay="300"
+          data-aos-duration="1000"
+          data-aos-offset="400"
+        >
+          <div class="contact-content">
+            <div class="row">
+              <div class="col-1-2">
+                <script
+                  type="text/javascript"
+                  src="https://pub37.bravenet.com/emailfwd/bnet.forms.js.php?formid=3860&usernum=3154160027&formpadding=0"
+                ></script>
+              </div>
+              <div
+                id="contact-phone"
+                class="col-1-2 text-center"
+              >
+                <h1>Pozostańmy w kontakcie:</h1>
+                <h2>690 460 993</h2>
+                <h2>biuro@lex-m.pl</h2>
+              </div>
             </div>
+          </div>
         </div>
-    </section>
+      </section>
 
-    <section id="banner">
-        <div data-aos="fade-zoom-in" data-aos-once="true" data-aos-delay="300" data-aos-duration="1000"
-            data-aos-offset="-400">
-            <div class="banner-content float-right">
-                <p>Lex-M &copy; 2020</p>
-            </div>
+      <section id="banner">
+        <div
+          data-aos="fade-zoom-in"
+          data-aos-once="true"
+          data-aos-delay="300"
+          data-aos-duration="1000"
+          data-aos-offset="-400"
+        >
+          <div class="banner-content float-right">
+            <p>Lex-M &copy; 2020</p>
+          </div>
         </div>
-    </section>
+      </section>
+    </main>
     <!--Scripts-->
-    <script src="https://kit.fontawesome.com/18249e22ff.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/18249e22ff.js"
+      crossorigin="anonymous"
+    ></script>
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-        AOS.init();
-    </script>
+    <!-- <script>
+      AOS.init();
+    </script> -->
 
     <script>
-        function uncheck() {
-            const inputs = document.querySelector('#chk');
-            inputs.checked = false;
-        }
+      function uncheck() {
+        const inputs = document.querySelector("#check");
+        inputs.checked = false;
+      }
     </script>
-
-</body>
-
+  </body>
 </html>
+
+<!-- <div
+data-aos="fade-zoom-in"
+data-aos-once="true"
+data-aos-delay="300"
+data-aos-duration="400"
+> -->

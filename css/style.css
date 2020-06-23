@@ -196,19 +196,33 @@ nav {
 }
 
 /*--------------info--------------*/
-.info-content {
+#info {
+  margin-top: 50px;
+}
+.info__content {
   width: 70%;
   height: 26px;
   padding: 30px;
   margin-left: 60px;
   line-height: 26px;
-  color: #333;
+  color: #777;
 }
 
-.info-photo {
+.info__content h3 {
+  margin: 20px auto;
+  line-height: 1.2rem;
+}
+
+.info__content p {
+  margin: 20px auto;
+  line-height: 1.2rem;
+}
+
+.info__photo {
   overflow: hidden;
 }
 
+/*--------------about--------------*/
 .about-content {
   width: 60%;
   padding: 30px;

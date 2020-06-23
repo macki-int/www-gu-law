@@ -223,27 +223,41 @@ nav {
 }
 
 /*--------------about--------------*/
-.about-content {
+#about {
+  margin-top: 50px;
+}
+/*!!!!!!!tutaj coś nie działa z tym marginesem*/
+
+.about__content {
   width: 60%;
   padding: 30px;
   line-height: 26px;
-  color: #333;
+  color: #777;
 }
 
-.about-photo {
+.about__content h2,
+h3,
+p {
+  margin-top: 20px;
+  line-height: 1.2rem;
+}
+
+.about__photo {
   width: 32%;
   overflow: hidden;
 }
 
-.about-photo img {
+.about__photo img {
   width: 100%;
 }
+
+/*-------------contact-------------*/
 
 #contact {
   background-color: rgb(245, 245, 245);
 }
 
-.contact-content {
+.contact__content {
   text-decoration: none;
   width: 100%;
   padding: 30px;
@@ -251,16 +265,16 @@ nav {
   color: #333;
 }
 
-.contact-content h2 {
+.contact__content h2 {
   margin-top: 30px;
   color: rgba(0, 0, 0, 0.644);
 }
 
-#contact-phone h1 {
+#contact__phone h1 {
   margin-top: 10%;
 }
 
-.banner-content p {
+.banner__content p {
   margin-right: 30px;
   color: white;
 }

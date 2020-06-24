@@ -25,7 +25,7 @@
         <ul class="menu">
           <a href="#" onclick="uncheck()">HOME</a>
           <a href="#services" onclick="uncheck()">OFERTA</a>
-          <a href="#about-me" onclick="uncheck()">O MNIE</a>
+          <a href="#about" onclick="uncheck()">O MNIE</a>
           <a href="#contact" onclick="uncheck()">KONTAKT</a>
           <label for="check" class="button--hide-menu">
             <i class="fas fa-times"></i>
@@ -37,14 +37,15 @@
       <section id="mainpage">
         <div class="mainpage__content">
           <h1>
-            WSPARCIE PRAWNE DLA FIRM <br />
-            KANCELARII PRAWNYCH I KOMORNICZYCH <br />
-            OSÓB PRYWATNYCH
+            WSPARCIE PRAWNE DLA FIRM
           </h1>
+          <h1>KANCELARII PRAWNYCH I KOMORNICZYCH</h1>
+          <h1>OSÓB PRYWATNYCH</h1>
         </div>
       </section>
 
-      <section id="services">
+      <section class="services">
+        <a class="services__anchor" id="services"></a>
         <h2>
           ŚWIADCZĘ POMOC W NASTĘPUJĄCYM ZAKRESIE
         </h2>
@@ -113,7 +114,7 @@
             <ul>
               <li>pomoc w procedurze administracyjnej</li>
               <li>
-                pośredniczenbie w załatwianiu spraw
+                pośredniczenie w załatwianiu spraw
                 urzędowych na wszystkich etapach postępowań
                 administracyjnych
               </li>
@@ -125,89 +126,86 @@
         </div>
       </section>
 
-      <section id="info">
+      <section class="info">
         <div class="info__content">
-          <h3>
-            Oferujemy usługi spersonalizowane – dostosowane
-            do oczekiwań i potrzeb każdego Klienta, oferując
-            dogodne formy współpracy, różnorodne rozwiązania
-            i wiele nowych możliwości
-          </h3>
-          <p>
-            Jednak nie zapewniam wyłącznie pomocy
-            teoretycznej – w razie potrzeby, gwarantując
-            profesjonalne i rzetelne podejście do każdej
-            sprawy. Gwarantujemy 100% poufności i najwyższą
-            jakość Każdą sprawą rozpatrujemy indywidualnie w
-            oparciu o przedłożoną dokumentację oraz po
-            zapoznaniu się ze stanem faktycznym i prawnym.
-            Indywidualna oferta jest przygotowana zgodnie z
-            potrzebami i oczekiwaniami klienta.
-          </p>
-        </div>
-        <div class="info__photo">
-          <img
-            src="./imgs/law_library_small.jpg"
-            alt="zdjecie biblioteki"
-          />
-        </div>
-      </section>
-
-      <section id="about">
-        <div class="about__photo">
-          <img src="./imgs/about_me.jpg" alt="O mnie" />
-        </div>
-        <div class="about__content">
-          <h2>O mnie</h2>
-          <h3>
-            Prawo nie jest po prostu sztywnym zbiorem
-            przepisów...
-          </h3>
-          <p>
-            A zadaniem prawnika nie jest wyłącznie
-            wyrecytowanie odpowiedniego paragrafu na
-            zawołanie. Kluczową rolę w tym wszystkim odgrywa
-            właściwa interpretacja każdego zapisku, z
-            dogłębnym zrozumieniem w jaki sposób może
-            przyczynić się do realnego przedstawienia
-            zaistniałej sytuacji. Właśnie to jest tak
-            fascynujące w tym zawodzie i stąd wywodzi się
-            moja zawodowa oraz prywatna pasja do kodeksów,
-            ustaw czy rozporządzeń. Studia inżynierskie oraz
-            prawnicze pozwoliły mi na w
-            przekrojowe/szerokie/niestandardowe/ spojrzenie
-            na stawiane pytanie. Dodatkowo połączenie
-            wykształcenia inżynierskiego i uniwersyteckiego
-            pozwala mi w swobodny sposób poruszać się po
-            najtrudniejszych gałęziach prawa jakim są prawo
-            budowlane, wodne, PZP, geologiczne i górnicze.
-          </p>
+          <div class="info__text">
+            <h3>
+              Oferujemy usługi spersonalizowane –
+              dostosowane do oczekiwań i potrzeb każdego
+              Klienta, oferując dogodne formy współpracy,
+              różnorodne rozwiązania i wiele nowych
+              możliwości
+            </h3>
+            <p>
+              Jednak nie zapewniam wyłącznie pomocy
+              teoretycznej – w razie potrzeby, gwarantując
+              profesjonalne i rzetelne podejście do każdej
+              sprawy. Gwarantujemy 100% poufności i
+              najwyższą jakość Każdą sprawą rozpatrujemy
+              indywidualnie w oparciu o przedłożoną
+              dokumentację oraz po zapoznaniu się ze stanem
+              faktycznym i prawnym. Indywidualna oferta jest
+              przygotowana zgodnie z potrzebami i
+              oczekiwaniami klienta.
+            </p>
+          </div>
+          <div class="info__photo"></div>
         </div>
       </section>
 
-      <section id="contact">
-        <div class="contact__content">
-          <div class="row">
-            <div class="col-1-2">
-              <script
-                type="text/javascript"
-                src="https://pub37.bravenet.com/emailfwd/bnet.forms.js.php?formid=3860&usernum=3154160027&formpadding=0"
-              ></script>
-            </div>
-            <div
-              id="contact__phone"
-              class="col-1-2 text-center"
-            >
-              <h1>Pozostańmy w kontakcie:</h1>
-              <h2>690 460 993</h2>
-              <h2>biuro@lex-m.pl</h2>
-            </div>
+      <section class="about">
+        <div class="about__content" id="about">
+          <div class="about__photo">
+            <img src="./imgs/about_me.jpg" alt="O mnie" />
+          </div>
+          <div class="about__text">
+            <h2>O mnie</h2>
+            <h3>
+              Prawo nie jest po prostu sztywnym zbiorem
+              przepisów...
+            </h3>
+            <p>
+              A zadaniem prawnika nie jest wyłącznie
+              wyrecytowanie odpowiedniego paragrafu na
+              zawołanie. Kluczową rolę w tym wszystkim
+              odgrywa właściwa interpretacja każdego
+              zapisku, z dogłębnym zrozumieniem w jaki
+              sposób może przyczynić się do realnego
+              przedstawienia zaistniałej sytuacji. Właśnie
+              to jest tak fascynujące w tym zawodzie i stąd
+              wywodzi się moja zawodowa oraz prywatna pasja
+              do kodeksów, ustaw czy rozporządzeń. Studia
+              inżynierskie oraz prawnicze pozwoliły mi na w
+              przekrojowe/szerokie/niestandardowe/
+              spojrzenie na stawiane pytanie. Dodatkowo
+              połączenie wykształcenia inżynierskiego i
+              uniwersyteckiego pozwala mi w swobodny sposób
+              poruszać się po najtrudniejszych gałęziach
+              prawa jakim są prawo budowlane, wodne, PZP,
+              geologiczne i górnicze.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact">
+        <div class="contact__content" id="contact">
+          <div class="contact__form">
+            <script
+              type="text/javascript"
+              src="https://pub37.bravenet.com/emailfwd/bnet.forms.js.php?formid=3860&usernum=3154160027&formpadding=0"
+            ></script>
+          </div>
+          <div id="contact__phone">
+            <h2>Pozostańmy w kontakcie:</h2>
+            <h3>690 460 993</h3>
+            <h3>biuro@lex-m.pl</h3>
           </div>
         </div>
       </section>
 
       <section id="banner">
-        <div class="banner__content float-right">
+        <div class="banner__content">
           <p>Lex-M &copy; 2020</p>
         </div>
       </section>

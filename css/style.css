@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Raleway:wght@200,400,800&display=swap&subset=latin-ext");
+@import url("https://fonts.googleapis.com/css?family=Raleway:wght@200,400,500,600,800&display=swap&subset=latin-ext");
 
 /* @import url("https://unpkg.com/aos@2.3.1/dist/aos.css"); */
 
@@ -149,38 +149,49 @@ nav {
 }
 
 .mainpage__content {
-  transform: translateX(-50%);
-  text-align: center;
+  transform: translateX(-45%);
   position: relative;
-  top: 50%;
+  top: 40%;
   left: 50%;
   text-shadow: 0px 5px 25px rgba(0, 0, 0, 0.322);
 }
 
 .mainpage__content h1 {
+  margin-top: 10px;
   font-size: 2rem;
   font-weight: 400;
 }
 
 /*------------services------------*/
-#services {
+.services {
   text-align: center;
 }
 
-#services h2 {
-  margin: 20px auto;
+.services__anchor {
+  display: block;
+  position: relative;
+  top: -90px;
+  visibility: hidden;
 }
 
 .services__content {
   display: flex;
+  font-size: 0.8rem;
+  margin: auto 2rem;
 }
 
+.services h2 {
+  margin: 20px auto;
+  font-size: 1.4rem;
+}
 .services__content div {
   flex: 1;
 }
 
-.services__content h3 {
+.services__content h3,
+em {
   margin: 20px auto;
+  font-size: 1.2rem;
 }
 
 @media screen and (max-width: 1000px) {
@@ -189,53 +200,72 @@ nav {
   }
 }
 
-#services li {
+.services li {
   margin-left: 50px;
   text-align: left;
   list-style-type: square;
 }
 
 /*--------------info--------------*/
-#info {
-  margin-top: 50px;
-}
 .info__content {
-  width: 70%;
-  height: 26px;
-  padding: 30px;
-  margin-left: 60px;
-  line-height: 26px;
+  margin-top: 4rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+.info__text {
+  width: calc(70% - 4rem);
+  margin-right: 4rem;
+  line-height: 1.2rem;
   color: #777;
 }
 
-.info__content h3 {
-  margin: 20px auto;
-  line-height: 1.2rem;
-}
-
-.info__content p {
+.info__text h3,
+p {
   margin: 20px auto;
   line-height: 1.2rem;
 }
 
 .info__photo {
   overflow: hidden;
+  background: url("../imgs/law_library_small.jpg");
+  width: 30%;
+  min-height: 30vh;
+  background-size: cover;
+  background-position: center;
+}
+
+@media screen and (max-width: 1000px) {
+  .info__content {
+    display: flex;
+    flex-direction: column;
+  }
+  .info__text {
+    width: 100%;
+    margin-right: 0;
+  }
+  .info__photo {
+    width: 100%;
+    height: 20vh;
+  }
 }
 
 /*--------------about--------------*/
-#about {
-  margin-top: 50px;
-}
-/*!!!!!!!tutaj coś nie działa z tym marginesem*/
-
 .about__content {
-  width: 60%;
-  padding: 30px;
-  line-height: 26px;
+  margin-top: 4rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  align-items: center;
+}
+
+.about__text {
+  width: calc(70% - 4rem);
+  margin-left: 4rem;
+  line-height: 1.2rem;
   color: #777;
 }
 
-.about__content h2,
+.about__text h2,
 h3,
 p {
   margin-top: 20px;
@@ -243,40 +273,66 @@ p {
 }
 
 .about__photo {
-  width: 32%;
   overflow: hidden;
+  width: 30%;
 }
 
 .about__photo img {
   width: 100%;
+  height: auto;
+}
+
+@media screen and (max-width: 1000px) {
+  .about__content {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .about__text {
+    width: 100%;
+    margin-left: 0;
+  }
 }
 
 /*-------------contact-------------*/
-
-#contact {
+.contact {
   background-color: rgb(245, 245, 245);
 }
 
 .contact__content {
   text-decoration: none;
-  width: 100%;
-  padding: 30px;
-  line-height: 10px;
+  margin: 4rem;
   color: #333;
+  display: flex;
 }
 
-.contact__content h2 {
-  margin-top: 30px;
+.contact__form {
+  width: calc(70%-4rem);
+  margin-right: 4rem;
+}
+
+.contact__phone {
+  width: 30%;
+}
+
+#contact__phone h2 {
+  color: rgba(0, 0, 0, 0.507);
+}
+
+#contact__phone h3 {
   color: rgba(0, 0, 0, 0.644);
 }
 
-#contact__phone h1 {
-  margin-top: 10%;
+@media screen and (max-width: 1100px) {
+  .contact__content {
+    flex-direction: column;
+  }
+  #contact__phone {
+    margin-top: 2rem;
+  }
 }
-
-.banner__content p {
-  margin-right: 30px;
-  color: white;
+/*-------------footer-------------*/
+.banner__content {
+  text-align: center;
 }
 
 #banner {
@@ -284,57 +340,8 @@ p {
   background-color: #75a99d;
 }
 
+/*------- do not delete -------*/
 div {
   float: left;
-  box-sizing: border-box;
 }
-
-.row {
-  width: 100%;
-}
-
-.col-1-2 {
-  width: 50%;
-  padding: 1px;
-}
-
-.col-1-3 {
-  width: 33.33%;
-  padding: 15px;
-}
-
-.col-1-4 {
-  width: 25%;
-  padding: 15px;
-}
-
-.text-center {
-  text-align: center;
-}
-
-.text-right {
-  text-align: right;
-}
-
-.float-right {
-  float: right;
-}
-
-.apla {
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.6);
-  color: #fff;
-}
-
-@media (max-width: 960px) {
-  .main-page-content h2 {
-    font-size: 30px;
-    font-weight: 600;
-  }
-
-  .main-page-content {
-    margin: 350px 0 0 250px;
-    text-shadow: 0px 5px 25px rgba(0, 0, 0, 0.322);
-  }
-}
+/*------- do not delete -------*/

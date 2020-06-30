@@ -65,6 +65,7 @@ nav {
   margin-left: 35px;
   font-size: 1.25rem;
   color: #777;
+  /* font-weight: 600; */
 }
 
 .menu a:last-of-type {
@@ -85,7 +86,8 @@ nav {
 }
 
 .menu a:hover {
-  font-weight: 600;
+  /* font-weight: 600; */
+  color: #75a99d;
 }
 
 #check {

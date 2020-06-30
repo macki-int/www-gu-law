@@ -333,14 +333,18 @@ p {
   }
 }
 /*-------------footer-------------*/
+#banner {
+  height: 10%;
+  /* background-color: #75a99d; */
+}
+
 .banner__content {
+  width: 100%;
+  color: white;
+  background-color: #75a99d;
   text-align: center;
 }
 
-#banner {
-  height: 10%;
-  background-color: #75a99d;
-}
 
 /*------- do not delete -------*/
 div {

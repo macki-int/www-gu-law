@@ -313,7 +313,7 @@ p {
 
 .contact__form {
   width: calc(70%-4rem);
-  margin-right: 4rem;
+  margin-right: 5rem;
 }
 
 .contact__phone {
@@ -321,7 +321,8 @@ p {
 }
 
 #contact__phone h2 {
-  margin-top: 2rem;
+  margin-right: 10rem;
+  margin-top: 3rem;
   font-size: 1rem;
   color: rgba(0, 0, 0, 0.507);
 }
@@ -345,14 +346,12 @@ p {
   
 .banner__content {
   width: 100%;
-    /* height: 60px; */
   padding-right: 1rem;
   color: white;
   font-size: 0.6rem;
   background-color: #75a99d;
   text-align: right;
 }
-
 
 /*------- do not delete -------*/
 div {

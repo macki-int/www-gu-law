@@ -63,8 +63,9 @@ nav {
   transition: 0.4s;
   padding: 0 20px;
   margin-left: 35px;
-  font-size: 1.25rem;
+  /* font-size: 1rem; */
   color: #777;
+  font-weight: 600;
 }
 
 .menu a:last-of-type {
@@ -85,7 +86,8 @@ nav {
 }
 
 .menu a:hover {
-  font-weight: 600;
+  /* font-weight: 600; */
+  color: #75a99d;
 }
 
 #check {
@@ -181,7 +183,7 @@ nav {
 }
 
 .services h2 {
-  margin: 20px auto;
+  margin: 50px auto 10px;
   font-size: 1.4rem;
 }
 .services__content div {
@@ -331,14 +333,18 @@ p {
   }
 }
 /*-------------footer-------------*/
-.banner__content {
-  text-align: center;
+#banner {
+  height: 5%;
+  /* background-color: #75a99d; */
 }
 
-#banner {
-  height: 10%;
+.banner__content {
+  width: 100%;
+  color: white;
   background-color: #75a99d;
+  text-align: right;
 }
+
 
 /*------- do not delete -------*/
 div {

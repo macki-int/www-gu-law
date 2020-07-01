@@ -345,6 +345,7 @@ p {
 .banner__content {
   width: 100%;
   color: white;
+  font-size: 0.7rem;
   background-color: #75a99d;
   text-align: right;
 }

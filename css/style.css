@@ -306,7 +306,7 @@ p {
 
 .contact__content {
   text-decoration: none;
-  margin: 4rem;
+  margin: 2rem;
   color: #333;
   display: flex;
 }
@@ -321,6 +321,8 @@ p {
 }
 
 #contact__phone h2 {
+  margin-top: 2rem;
+  font-size: 1rem;
   color: rgba(0, 0, 0, 0.507);
 }
 

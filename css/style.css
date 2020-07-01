@@ -61,8 +61,8 @@ nav {
   text-decoration: none;
   -webkit-transition: 0.4s;
   transition: 0.4s;
-  padding: 0 20px;
-  margin-left: 35px;
+  padding: 0 5px;
+  margin-left: 10px;
   /* font-size: 1rem; */
   color: #777;
   font-weight: 600;
@@ -339,6 +339,7 @@ p {
 /*-------------footer-------------*/
 #banner {
    /* background-color: #75a99d; */
+
 }
 
 .banner__content {

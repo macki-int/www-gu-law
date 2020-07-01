@@ -176,6 +176,10 @@ nav {
   visibility: hidden;
 }
 
+.fa-layer-group{
+  color: #75a99d;
+}
+
 .services__content {
   display: flex;
   font-size: 0.8rem;
@@ -334,8 +338,7 @@ p {
 }
 /*-------------footer-------------*/
 #banner {
-  height: 5%;
-  /* background-color: #75a99d; */
+   /* background-color: #75a99d; */
 }
 
 .banner__content {

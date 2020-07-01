@@ -213,10 +213,15 @@ em {
 }
 
 /*--------------info--------------*/
+.info{
+  background-color: rgb(245, 245, 245);
+}
+
 .info__content {
   margin-top: 4rem;
   margin-left: 2rem;
   margin-right: 2rem;
+
 }
 
 .info__text {
@@ -234,7 +239,7 @@ p {
 
 .info__photo {
   overflow: hidden;
-  background: url("../imgs/law_library_small.jpg");
+  background: url("../imgs/law_library_small_mono.jpg");
   width: 30%;
   min-height: 30vh;
   background-size: cover;

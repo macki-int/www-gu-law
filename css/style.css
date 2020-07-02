@@ -153,7 +153,7 @@ nav {
 .mainpage__content {
   transform: translateX(-45%);
   position: relative;
-  top: 40%;
+  top: 50%;
   left: 50%;
   text-shadow: 0px 5px 25px rgba(0, 0, 0, 0.322);
 }
@@ -176,9 +176,9 @@ nav {
   visibility: hidden;
 }
 
-.fa-layer-group{
+/* .fa-layer-group{
   color: #75a99d;
-}
+} */
 
 .services__content {
   display: flex;
@@ -196,7 +196,7 @@ nav {
 
 .services__content h3,
 em {
-  margin: 20px auto;
+  margin: 10px auto;
   font-size: 1.2rem;
 }
 

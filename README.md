@@ -1,6 +1,6 @@
 # Company website
 
-Project of website for lawyer.
+Project of website for law consultants.
 
 ## Getting Started
 

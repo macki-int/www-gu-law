@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Raleway:wght@200,400,500,600,800&display=swap&subset=latin-ext");
+/* @import url("https://fonts.googleapis.com/css?family=Raleway:wght@200,400,500,600,800&display=swap&subset=latin-ext"); */
 
 /* @import url("https://unpkg.com/aos@2.3.1/dist/aos.css"); */
 
@@ -96,6 +96,7 @@ nav {
 }
 
 @media screen and (max-width: 1000px) {
+
   .button--show-menu,
   .button--hide-menu {
     display: block;
@@ -132,10 +133,11 @@ nav {
     right: 1.6rem;
   }
 
-  #check:checked ~ .menu {
+  #check:checked~.menu {
     right: 0;
   }
-  #check:checked ~ .button--show-menu {
+
+  #check:checked~.button--show-menu {
     visibility: hidden;
   }
 }
@@ -190,6 +192,7 @@ nav {
   margin: 50px auto 10px;
   font-size: 1.4rem;
 }
+
 .services__content div {
   flex: 1;
 }
@@ -213,7 +216,7 @@ em {
 }
 
 /*--------------info--------------*/
-.info{
+.info {
   background-color: rgb(245, 245, 245);
 }
 
@@ -251,10 +254,12 @@ p {
     display: flex;
     flex-direction: column;
   }
+
   .info__text {
     width: 100%;
     margin-right: 0;
   }
+
   .info__photo {
     width: 100%;
     height: 20vh;
@@ -298,6 +303,7 @@ p {
     display: flex;
     flex-direction: column-reverse;
   }
+
   .about__text {
     width: 100%;
     margin-left: 0;
@@ -340,15 +346,14 @@ p {
   .contact__content {
     flex-direction: column;
   }
+
   #contact__phone {
     margin-top: 2rem;
   }
 }
+
 /*-------------footer-------------*/
-#banner {
-   /* background-color: #75a99d; */
-  }
-  
+
 .banner__content {
   width: 100%;
   padding-right: 1rem;
@@ -362,4 +367,5 @@ p {
 div {
   float: left;
 }
+
 /*------- do not delete -------*/

@@ -25,7 +25,6 @@ download ZIP file
 - HTML
 - CSS
 - JavaScript
-- [AOS](https://michalsnik.github.io/aos/)
 
 ## Current Status
 

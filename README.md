@@ -1,6 +1,6 @@
 # Company website
 
-Project of website for lawyer.
+Project of website for law consultants.
 
 ## Getting Started
 
@@ -25,7 +25,6 @@ download ZIP file
 - HTML
 - CSS
 - JavaScript
-- [AOS](https://michalsnik.github.io/aos/)
 
 ## Current Status
 

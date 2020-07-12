@@ -3,6 +3,7 @@
 /* @import url("https://unpkg.com/aos@2.3.1/dist/aos.css"); */
 
 /*-------------general styles-----------*/
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -25,6 +26,7 @@ a {
 }
 
 /*-------------header-----------*/
+
 header {
   background: #fff;
   padding: 10px 50px;
@@ -43,6 +45,7 @@ header div:first-of-type {
 }
 
 /*-------------navbar-------------*/
+
 nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -72,8 +75,7 @@ nav {
   margin-right: 50px;
 }
 
-.button--show-menu,
-.button--hide-menu {
+.button--show-menu, .button--hide-menu {
   -webkit-transition: 0.4s;
   transition: 0.4s;
   font-size: 1.5em;
@@ -96,12 +98,9 @@ nav {
 }
 
 @media screen and (max-width: 1000px) {
-
-  .button--show-menu,
-  .button--hide-menu {
+  .button--show-menu, .button--hide-menu {
     display: block;
   }
-
   .menu {
     position: fixed;
     width: 100%;
@@ -115,34 +114,30 @@ nav {
     transition: 0.7s;
     width: 40%;
   }
-
   .menu a {
     display: block;
     padding: 0.8rem;
     opacity: 1;
     margin: auto;
   }
-
   .menu a:last-of-type {
     margin-right: 0;
   }
-
   .button--hide-menu {
     position: absolute;
     top: 1.6rem;
     right: 1.6rem;
   }
-
   #check:checked~.menu {
     right: 0;
   }
-
   #check:checked~.button--show-menu {
     visibility: hidden;
   }
 }
 
 /*----------mainpage---------*/
+
 #mainpage {
   overflow: hidden;
   background: url("../imgs/home_page.jpg");
@@ -167,6 +162,7 @@ nav {
 }
 
 /*------------services------------*/
+
 .services {
   text-align: center;
 }
@@ -197,8 +193,7 @@ nav {
   flex: 1;
 }
 
-.services__content h3,
-em {
+.services__content h3, em {
   margin: 10px auto;
   font-size: 1.2rem;
 }
@@ -216,6 +211,7 @@ em {
 }
 
 /*--------------info--------------*/
+
 .info {
   background-color: rgb(245, 245, 245);
 }
@@ -224,7 +220,6 @@ em {
   margin-top: 4rem;
   margin-left: 2rem;
   margin-right: 2rem;
-
 }
 
 .info__text {
@@ -234,8 +229,7 @@ em {
   color: #777;
 }
 
-.info__text h3,
-p {
+.info__text h3, p {
   margin: 20px auto;
   line-height: 1.2rem;
 }
@@ -254,12 +248,10 @@ p {
     display: flex;
     flex-direction: column;
   }
-
   .info__text {
     width: 100%;
     margin-right: 0;
   }
-
   .info__photo {
     width: 100%;
     height: 20vh;
@@ -267,6 +259,7 @@ p {
 }
 
 /*--------------about--------------*/
+
 .about__content {
   margin-top: 4rem;
   margin-left: 2rem;
@@ -281,9 +274,7 @@ p {
   color: #777;
 }
 
-.about__text h2,
-h3,
-p {
+.about__text h2, h3, p {
   margin-top: 20px;
   line-height: 1.2rem;
 }
@@ -303,7 +294,6 @@ p {
     display: flex;
     flex-direction: column-reverse;
   }
-
   .about__text {
     width: 100%;
     margin-left: 0;
@@ -311,9 +301,10 @@ p {
 }
 
 /*-------------contact-------------*/
-.contact {
+
+/* .contact {
   background-color: rgb(245, 245, 245);
-}
+} */
 
 .contact__content {
   text-decoration: none;
@@ -322,9 +313,94 @@ p {
   display: flex;
 }
 
-.contact__form {
+/* .contact__form {
   width: calc(70%-4rem);
   margin-right: 5rem;
+} */
+
+/* https: //www.eactive.pl/porady-dla-webdeweloperow/jak-stworzyc-formularz-kontaktowy-z-wykorzystaniem-pseudo-selektorow-css/ */
+/* https: //forum.pasja-informatyki.pl/435566/formularz-kontaktowy-w-html-bez-php */
+
+#contact-form {
+  margin: auto;
+  width: 20rem;
+  max-width: 100%;
+}
+
+#contact-form legend {
+  font-size: 1rem;
+}
+
+/* #contact-form em {
+  color: red;
+} */
+
+#contact-form .item {
+  position: relative;
+  margin: 10px 0;
+}
+
+#contact-form input, #contact-form textarea {
+  padding: 10px 18px;
+  width: 100%;
+  font-size: 20px;
+  background: #efefef;
+  border: none;
+  box-sizing: border-box;
+}
+
+#contact-form label {
+  opacity: 0.3;
+  position: absolute;
+  bottom: 0px;
+  left: 5px;
+  transition: 1s all;
+  font-size: 14px;
+  line-height: 40px;
+}
+
+#contact-form input:focus, #contact-form textarea:focus {
+  border: 1px solid #777;
+}
+
+#contact-form input:focus+label, #contact-form input:valid+label {
+  bottom: 30px;
+  font-size: 10px;
+  opacity: 0.7;
+}
+
+#contact-form input:valid {
+  background-image: url('https://cdn0.iconfinder.com/data/icons/small-n-flat/24/678134-sign-check-128.png');
+  background-repeat: no-repeat;
+  background-size: 12px;
+  background-position: 1% 50%;
+  border: 1px solid #75a99d;
+}
+
+#contact-form textarea+label {
+  top: 0;
+}
+
+#contact-form textarea:focus+label, #contact-form textarea:valid+label {
+  top: -25px;
+  font-size: 10px;
+  opacity: 0.7;
+}
+
+#contact-form textarea:valid {
+  border: 1px solid #75a99d;
+}
+
+#contact-form input[type="submit"] {
+  border: none;
+  background-image: none;
+  background-color: rgb(211, 211, 211);
+  color: #fff;
+}
+
+#contact-form input[type="submit"]:hover {
+  cursor: pointer;
+  background-color: #75a99d;
 }
 
 .contact__phone {
@@ -346,7 +422,6 @@ p {
   .contact__content {
     flex-direction: column;
   }
-
   #contact__phone {
     margin-top: 2rem;
   }
@@ -364,6 +439,7 @@ p {
 }
 
 /*------- do not delete -------*/
+
 div {
   float: left;
 }
